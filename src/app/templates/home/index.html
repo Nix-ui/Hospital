@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %} Hospital San Juan {% endblock %}
+{% block header %}
+{%include 'header.html' %}
+{% endblock %}
+{% block body %}
+<section class="bg-blue-800 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl font-bold mb-4">Cuidando tu salud con excelencia</h1>
+        <p class="text-xl mb-8">Atención médica de calidad las 24 horas del día</p>
+        <button class="bg-white text-blue-800 px-8 py-3 rounded-full font-bold hover:bg-blue-100">
+            Agendar Cita
+        </button>
+    </div>
+</section>
+
+<!-- Services Grid Component - Reutilizable -->
+<!-- @component: services-grid -->
+<section class="py-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-blue-800 text-4xl mb-4">🏥</div>
+            <h3 class="text-xl font-bold mb-2">Urgencias</h3>
+            <p class="text-gray-600">Atención inmediata 24/7 para emergencias médicas</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-blue-800 text-4xl mb-4">👨‍⚕️</div>
+            <h3 class="text-xl font-bold mb-2">Consulta General</h3>
+            <p class="text-gray-600">Atención médica general y especializada</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="text-blue-800 text-4xl mb-4">💊</div>
+            <h3 class="text-xl font-bold mb-2">Farmacia</h3>
+            <p class="text-gray-600">Medicamentos y productos de salud</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block footer %}
+{%include 'footer.html' %}
+{% endblock %}
